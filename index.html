@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Trivia App Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body onload='setup()'>
+        <!-- ||||||||||||||  LAUNCH SCREEN  ||||||||||||||| -->
+        <div id='launch-screen' hidden>
+             <h2 id='title'>Trivia App</h2>
+            
+             <h3>Choose a category...</h3>
+            <!-- iTRIVIA-CATEGORIES BELOW - DON'T EDIT!  -->
+            <div class='iTrivia-categories'>
+                <button class='categoryButton'>
+                    <div class='categoryLabel'>Category Name</div>
+                </button>
+            </div>
+            <!-- END OF iTRIVIA-CATEGORIES  -->
+        </div>
+
+        <!-- ||||||||||||||  QUESTION SCREEN  ||||||||||||||| -->
+        <div id='question-screen' hidden>
+            <div id='feedback'></div>
+            <!-- iTRIVIA-QUESTION BELOW - DON'T EDIT!  -->
+            <div id='iTrivia-question'>
+                <div id='category'>Category Goes Here</div>
+                <div id='question'>Question Goes Here</div>
+                <div class='answerSet'>
+                    <button class='answer-button' id='correctAnswer'>Correct Answer</button>
+                    <button class='answer-button' id='incorrectAnswer1'>Incorrect Answer</button>
+                    <button class='answer-button' id='incorrectAnswer2'></button>
+                    <button class='answer-button' id='incorrectAnswer3'></button>
+                </div>
+            </div>
+            <!-- END OF iTRIVIA-QUESTION  -->
+            <button id='back-button' onclick='gotoLaunchScreen();'>BACK TO CATEGORIES</button>
+            <button id='next-button' onclick='gotoQuestionScreen(trivia.currentCategory);'>NEXT QUESTION</button>
+        </div>
+
+        <!-- ||||||||||||||  JS LIBRARIES  ||||||||||||||| -->
+        <script src="https://www.gstatic.com/firebasejs/3.6.0/firebase.js"></script>
+        <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+        <script src='https://cdn.jsdelivr.net/transparency/0.9.14/transparency.min.js'></script>
+        <script src="idewTrivia.js"></script>
+        <script src="questions.js"></script>
+        <script src="app.js"></script>
+    </body>
+
+</html>

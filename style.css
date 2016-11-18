@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 10px;
+    background-color: orange;
+    max-width: 450px;
+}
+
+/* STYLES FOR ELEMENTS ON LAUNCH SCREEN */
+#launch-screen {
+    text-align: center;
+}
+#trivia-metrics {
+    background-color: rgba(255,255,255,0.5);
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.categoryButton {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    border: none;
+    background-color: rgba(255,255,255,0.5);
+}
+.categoryLabel {
+    font-size: 22px;
+}
+
+.categoryImage {
+    margin: 10px;
+    width: 100px;
+}
+
+/* STYLES FOR ELEMENTS ON QUESTION SCREEN */
+#category-metrics {
+    background-color: rgba(255,255,255,0.8);
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+#category-progress {
+    background-color: blue;
+}
+#category {
+    font-size: 16px;
+    color: gray;
+}
+#question {
+    font-size: 28px;
+    text-shadow: 2px 2px 8px #FFF;
+}
+.answer-button {
+    display: block;
+    margin-top: 10px;
+    background-color: cyan;
+    border:none;
+    font-size: 18px;
+    outline: none;
+}
+#feedback {
+    padding: 10px;
+    color: darkred;
+    text-align: center;
+    font-size: 28px;
+    min-height: 32px;
+}
+
+#back-button, #next-button {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.8);
+    border: none;
+    outline: none;
+}
