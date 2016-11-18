@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    padding: 10px;
+    background-color: yellow;
+    max-width: 450px;
+}
+
+/* STYLES FOR ELEMENTS ON LAUNCH SCREEN */
+#launch-screen {
+    text-align: center;
+}
+#trivia-metrics {
+    background-color: lightyellow;
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+.categoryButton {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    border: none;
+    background-color: orange;
+}
+.categoryLabel {
+    font-size: 22px;
+}
+
+/* STYLES FOR ELEMENTS ON QUESTION SCREEN */
+#category-metrics {
+    background-color: lightyellow;
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+#category {
+    font-size: 16px;
+    color: gray;
+}
+#question {
+    font-size: 28px;
+}
+.answer-button {
+    display: block;
+    margin-top: 10px;
+    background-color: cyan;
+    border:none;
+    font-size: 18px;
+    outline: none;
+}
+#feedback {
+    padding: 10px;
+    color: darkred;
+    text-align: center;
+    font-size: 28px;
+    min-height: 32px;
+}
+#back-button, #next-button {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    padding: 15px;
+    background-color: lightyellow;
+    border: none;
+    outline: none;
+}
